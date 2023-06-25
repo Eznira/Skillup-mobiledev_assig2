@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+  <link rel="stylesheet" href="./assets/fonts/HankenGrotesk-VariableFont_wght.ttf">
+  <link rel="stylesheet" href="./style.css">
+  <title>Frontend Mentor | Results summary component</title>
+  
+  <!-- linked my local font from local directory  -->
+  <style>
+    @font-face {
+    font-family: 'Hanken Grotesk';
+    font-weight: 500 700 800;
+    src: url(./assets/fonts/HankenGrotesk-VariableFont_wght.ttf) format("woff2");
+  }
+  </style>
+</head>
+<body>
+  <!-- whole layout container  -->
+  <main class="container">
+    <!-- layout container for the actual content   -->
+    <section class="result-container">
+      <!-- left div  -->
+      <div class="result-overview">
+        <h2 class="overview-title">
+          Your Result
+        </h2>
+        <div class="score-container-circle">
+            <h1>76</h1>
+            <p>of 100</p>
+        </div>
+        <div class="remark-container">
+          <h2>Great</h2>
+          <p>You scored higher than 65% of the people who have taken these tests.</p>
+        </div>
+      </div>
+
+      <!-- right div  -->
+      <div class="result-summary">
+        <h2>Summary</h2>
+        <div class="score-tab-container">
+          <div class="score-tab first-tab">
+            <span>Reaction</span>
+            <span class="active"><strong>80</strong> / 100</span>
+          </div>
+          <div class="score-tab second-tab">
+            <span>Memory</span>
+            <span class="active"><strong>92</strong> / 100</span>
+          </div>
+          <div class="score-tab third-tab">
+            <span>Verbal</span>
+            <span class="active"><strong>61</strong> / 100</span>
+          </div>
+          <div class="score-tab fourth-tab">
+            <span>Visual</span>
+            <span class="active"><strong>72</strong> / 100</span>
+          </div>
+        </div>
+        <span class="continue-btn">continue</span>
+      </div>
+    </section>
+    <!-- end of main content section  -->
+    <div class="attribution">
+      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
+      Coded by <a href="#">Your Name Here</a>.
+    </div>
+  </main>
+</body>
+</html>
