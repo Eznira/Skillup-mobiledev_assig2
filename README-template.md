@@ -101,7 +101,7 @@ Use this section to outline areas that you want to continue focusing on in futur
 - Website - [Ihim Arinze Henry](https://www.your-site.com)
 - Frontend Mentor - [@yourusername](https://www.frontendmentor.io/profile/yourusername)
 - Twitter - [@HenryIhim](https://www.twitter.com/HenryIhim)
-
+-
 - Website - [Ugochukwu Jesse Chukwubuikem](https://sample-cv-jayrony.vercel.app)
 - Frontend Mentor - [@yourusername](https://www.frontendmentor.io/profile/yourusername)
 
