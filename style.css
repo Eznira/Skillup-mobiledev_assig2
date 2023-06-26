@@ -1,226 +1,71 @@
-/* initiallizing all DOM element styles  */
-*{
-  padding: 0;
-  margin: 0;
-  box-sizing: border-box;
-  font-family: var(--font-family);
-}
-h1{
-  font-size: 2.5rem;
-  font-weight: 800;
-}
-h2{
-  font-size: 1.5rem;
-  font-weight: 700;
-}
-p{
-  font-size: 18px;
-  font-weight: 500;
-}
-/* creating my color variables  */
-:root{
-  --Light-red:hsl(0, 100%, 67%);
-  --Orangey-yellow:hsl(39, 100%, 56%);
-  --Green-teal:hsl(166, 100%, 37%);
-  --Cobalt-blue:hsl(234, 85%, 45%);
-  --light-gradient:hsl(252, 100%, 67%);
-  --dark-gradient:hsl(241, 81%, 54%);
-  --violet:hsla(256, 72%, 46%, 1);
-  --persian:hsla(241, 72%, 46%, 0);
-  --white:hsl(0, 0%, 100%);
-  --pale-shadow:hsl(221, 100%, 96%);
-  --light-lavender:hsl(241, 100%, 89%);
-  --dark-grey-blue:hsl(224, 30%, 27%);
-  --font-family:'Hanken Grotesk';
-}
-body{
-  padding: 100px;
-}
-.container{
-  background-color: var(--white);
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  width: 100%;
-  flex-direction: column;
-}
-.result-container{
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  width: 55vw;
-  height: 80vh;
-  border-radius: 40px;
-  margin-bottom: 80px;
-}
-.result-overview, .result-summary{
-  flex: 1;
-  height: 100%;
-  display: flex;
-  align-items: center;
-}
-
-/* styles for right div  */
-
-.result-overview{
-  background-image: linear-gradient(180deg,  var(--light-gradient) 10%,  var(--dark-gradient) 90%);
-  border-radius: 40px;
-  box-shadow: 0px 15px 10px var(--pale-shadow);
-  justify-content: space-around;
-  padding: 20px 10px;
-  flex-direction: column;
-  position: relative;
-}
-.overview-title{
-  font-family: var(--font-family);
-  text-transform: capitalize;
-  font-weight: 500;
-  color: var(--light-lavender);
-}
-.score-container-circle{
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-direction: column;
-  height: 200px;
-  width: 200px;
-  border-radius: 50%;
-  background-image: linear-gradient(180deg, var(--violet) 10%, var(--persian) 90%);
-}
-.score-container-circle h1{
-  color: var(--white);
-  font-size: 3rem;
-}
-.score-container-circle p {
-  color: var(--light-lavender);
-}
-.remark-container{
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-direction: column;
-  width: 70%;
-  text-align: center;
-}
-.remark-container h2{
-  color: var(--white);
-  margin-bottom: 5px;
-}
-.remark-container p{
-  color: var(--light-lavender);
-}
-
-/* styles for right div starts here  */
-
-.result-summary{
-  border-radius: 0px 40px 40px 0px;
-  box-shadow: 0px 15px 10px var(--pale-shadow);
-  justify-content: space-around;
-  flex-direction: column;
-  padding: 20px;
-}
-.result-summary h2{
-  color: var(--dark-grey-blue);
-  align-self: flex-start;
-}
-.score-tab{
-  width: 100%;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  padding:15px;
-  border-radius: 10px;
-  margin: 10px 0px;
-}
-.first-tab{
-  color: var(--Light-red);
-  background-color: hsla(0, 100%, 96%, 0.769);
-}
-.second-tab{
-  color: var(--Orangey-yellow);
-  background-color: hsla(37, 100%, 93%, 0.798);
-}
-.third-tab{
-  color: var(--Green-teal);
-  background-color: hsl(165, 80%, 92%);
-}
-.fourth-tab{
-  color: var(--Cobalt-blue);
-  background-color: hsl(234, 95%, 92%);
-}
-.score-tab span {
-  font-weight: 500;
-}
-.score-tab-container{
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  flex-direction: column;
-  width: 100%;
-}
-.continue-btn{
-  width: 100%;
-  padding: 15px;
-  color: var(--white);
-  font-weight: 700;
-  background-color: var(--dark-grey-blue);
-  border-radius: 12rem;
-  text-align: center;
-  cursor: pointer;
-  transition: all .3s ease-in-out;
-}
-.continue-btn:hover{
-  background-image: linear-gradient(180deg, var(--light-gradient) 10%, var(--dark-gradient) 90%);
-}
-.continue-btn:active{
-  background-image: linear-gradient(180deg, var(--light-gradient) 10%, var(--dark-gradient) 90%);
-}
-.active{
-  color: var(--dark-grey-blue);
-}
-.active strong{
-  color:hsl(0, 0%, 0%) ;
-}
-
-/* mobile screen styles starts here  */
-
-@media screen and (max-width: 375px){
-  body{
-      padding: 0px;
-  }
-  .result-container {
-         flex-direction: column;
-         height: auto;
-         width: 100vw;
-      }
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+  <link rel="stylesheet" href="./assets/fonts/HankenGrotesk-VariableFont_wght.ttf">
+  <link rel="stylesheet" href="./style.css">
+  <title>Frontend Mentor | Results summary component</title>
   
-      .result-overview,
-      .result-summary {
-          flex: 1;
-          height: auto;
-          display: flex;
-          align-items: center;
-          width: 100%;
-      }
-      .result-summary{
-          border-radius: 0px 0px 40px 40px;
-      }
-      .result-overview{
-          border-radius: 0px 0px 40px 40px;
-          height: auto;
-      }
-      .score-container-circle{
-          width: 150px;
-          height: 150px;
-          margin: 30px 0px;
-      }
-      .remark-container{
-          width: 80%;
-      }
-      .score-tab{
-          margin: 10px 0px;
-      }
-      .attribution{
-          text-align: center;
-      }
-}
+  <!-- linked my local font from local directory  -->
+  <style>
+    @font-face {
+    font-family: 'Hanken Grotesk';
+    font-weight: 500 700 800;
+    src: url(./assets/fonts/HankenGrotesk-VariableFont_wght.ttf) format("woff2");
+  }
+  </style>
+</head>
+<body>
+  <!-- whole layout container  -->
+  <main class="container">
+    <!-- layout container for the actual content   -->
+    <section class="result-container">
+      <!-- left div  -->
+      <div class="result-overview">
+        <h2 class="overview-title">
+          Your Result
+        </h2>
+        <div class="score-container-circle">
+            <h1 style="font-size: 4rem;">76</h1>
+            <p>of 100</p>
+        </div>
+        <div class="remark-container">
+          <h2>Great</h2>
+          <p>You scored higher than 65% of the people who have taken these tests.</p>
+        </div>
+      </div>
+
+      <!-- right div  -->
+      <div class="result-summary">
+        <h2>Summary</h2>
+        <div class="score-tab-container">
+          <div class="score-tab first-tab">
+            <img src="assets/images/icon-reaction.svg" alt="reaction-icon"> <span>Reaction</span>
+            <span class="active"><strong>80</strong> / 100</span>
+          </div>
+          <div class="score-tab second-tab">
+            <img src="assets/images/icon-memory.svg" alt="memory-ico"><span>Memory</span>
+            <span class="active"><strong>92</strong> / 100</span>
+          </div>
+          <div class="score-tab third-tab">
+            <img src="assets/images/icon-verbal.svg" alt="verbal-ico"><span>Verbal</span>
+            <span class="active"><strong>61</strong> / 100</span>
+          </div>
+          <div class="score-tab fourth-tab">
+            <img src="assets/images/icon-visual.svg" alt="visual-ico"><span>Visual</span>
+            <span class="active"><strong>72</strong> / 100</span>
+          </div>
+        </div>
+        <span class="continue-btn">Continue</span>
+      </div>
+    </section>
+    <!-- end of main content section  -->
+    <div class="attribution">
+      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
+      Coded by <a href="https://github.com/Eznira/Skillup-mobiledev_assig2" target="_blank">Ihim Arinze, Ugochukwu Jesse</a>.
+    </div>
+  </main>
+</body>
+</html>
